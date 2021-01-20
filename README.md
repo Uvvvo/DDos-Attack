@@ -1,4 +1,4 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub contributors](https://img.shields.io/github/contributors/fsystem88/dos-attack.svg)](https://GitHub.com/fsystem88/dos-attack/graphs/contributors/) ![repo-size](https://img.shields.io/github/repo-size/fsystem88/dos-attack)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub contributors](https://img.shields.io/github/contributors/fsystem88/dos-attack.svg)](https://GitHub.com/fsystem88/dos-attack/graphs/contributors/) ![repo-size](https://img.shields.io/github/repo-size/kanekikon/Attack-Ddos)
 
 # DoS attack
 The program uses a simple type of DDoS attack "HTTP flood" using multithreading and a proxies. The program was created for informational purposes!<br>
