@@ -5,11 +5,11 @@ HTTP Website Attack Tool for destroying websites The tool is for educational pur
 # Contact me on Telegram
 <br><b>---> <a href="https://t.me/SSScw">Telegram</a> <---</b><br>
 
-# Установка
+# Installing
 1. <code>apt update && apt upgrade -y</code>
 2. <code>apt install git python -y</code> и согласиться: введя Y и нажав Enter
 3. <code>python -m pip install requests colorama click</code>
-4. <code>git clone https://github.com/FSystem88/dos-attack</code>
+4. <code>git clone https://github.com/kanekikon/DDos-Attack</code>
 5. <code>cd dos-attack</code>
 
 # Запуск
