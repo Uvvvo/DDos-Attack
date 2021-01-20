@@ -1,10 +1,9 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [
-# DoS attack
-The program uses a simple type of DDoS attack "HTTP flood" using multithreading and a proxies. The program was created for informational purposes!<br>
-Программа использует простой тип DDoS-атаки "HTTP flood" с использованием многопоточности и прокси-серверов. Программа была создана в информационных целях!
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
+# DDos Attack
+HTTP Website Attack Tool for destroying websites The tool is for educational purposes
 
-# Обязательно подпишитесь на канал в телеграме, там может решаться дальнейшая судьба проекта или очень важная информация!!!
-<br><b>---> <a href="https://t.me/FS88ch">Канал в Telegram</a> <---</b><br>
+# Contact me on Telegram
+<br><b>---> <a href="https://t.me/SSScw">Telegram</a> <---</b><br>
 
 # Установка
 1. <code>apt update && apt upgrade -y</code>
