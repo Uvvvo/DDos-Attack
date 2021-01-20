@@ -1,4 +1,4 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub contributors](https://img.shields.io/github/contributors/fsystem88/dos-attack.svg)](https://GitHub.com/fsystem88/dos-attack/graphs/contributors/) ![repo-size](https://img.shields.io/github/repo-size/kanekikon/Attack-Ddos)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub contributors](https://img.shields.io/github/contributors/kanekikon/Attack-Ddos.svg)]
 
 # DoS attack
 The program uses a simple type of DDoS attack "HTTP flood" using multithreading and a proxies. The program was created for informational purposes!<br>
@@ -17,7 +17,7 @@ The program uses a simple type of DDoS attack "HTTP flood" using multithreading 
 # Запуск
 • <code>python ddos.py</code><br><br>
 Usage: ddos.py [OPTIONS]<br>
-Options:<br>
+Options:<br
 <code>--proxy</code> - TEXT - File with a proxy<br>
 <code>--help</code> - Show this message and exit.<br>
 Example:<br>
