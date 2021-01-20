@@ -11,9 +11,9 @@ HTTP Website Attack Tool for destroying websites The tool is for educational pur
 3. <code>python -m pip install requests colorama click</code>
 4. <code>git clone https://github.com/kanekikon/DDos-Attack</code>
 5. <code>cd dos-attack</code>
-
+6. <code>python ddos.py</code><br><br>
 # Some commands
-• <code>python ddos.py</code><br><br>
+
 Usage: ddos.py [OPTIONS]<br>
 Options:<br
 <code>--proxy</code> - TEXT - File with a proxy<br>
