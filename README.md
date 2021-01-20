@@ -7,12 +7,12 @@ HTTP Website Attack Tool for destroying websites The tool is for educational pur
 
 # Installing
 1. <code>apt update && apt upgrade -y</code>
-2. <code>apt install git python -y</code> и согласиться: введя Y и нажав Enter
+2. <code>apt install git python -y</code> 
 3. <code>python -m pip install requests colorama click</code>
 4. <code>git clone https://github.com/kanekikon/DDos-Attack</code>
 5. <code>cd dos-attack</code>
 
-# Запуск
+# Some commands
 • <code>python ddos.py</code><br><br>
 Usage: ddos.py [OPTIONS]<br>
 Options:<br
@@ -23,9 +23,7 @@ Example:<br>
 or<br>
 <code>python ddos.py --proxy "dicts/proxies.txt"</code><br>
 
-# For Windows
-Просто скачать и заупстить EXE:<br>
-https://fsystem88.ru/programs/ddos.exe
+
 
 # Update
 <code>cd ~/dos-attack/ && git pull</code>
