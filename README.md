@@ -1,5 +1,4 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub contributors](https://img.shields.io/github/contributors/kanekikon/Attack-Ddos.svg)]
-
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [
 # DoS attack
 The program uses a simple type of DDoS attack "HTTP flood" using multithreading and a proxies. The program was created for informational purposes!<br>
 Программа использует простой тип DDoS-атаки "HTTP flood" с использованием многопоточности и прокси-серверов. Программа была создана в информационных целях!
