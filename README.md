@@ -3,13 +3,13 @@
 HTTP Website Attack Tool for destroying websites The tool is for educational purposes
 
 # Contact me on Telegram
-<br><b>~~> <a href="https://t.me/CTITIT">Telegram</a> <~~</b><br>
+<br><b>~~> <a href="https://t.me/CTlTl">Telegram</a> <~~</b><br>
 
 # Installing
 1. <code>apt update && apt upgrade -y</code>
 2. <code>apt install git python -y</code> 
 3. <code>python -m pip install requests colorama click</code>
-4. <code>git clone https://github.com/kanekikon/DDos-Attack</code>
+4. <code>git clone https://github.com/uvvvo/DDos-Attack</code>
 5. <code>cd DDos-Attack</code>
 6. <code>python Attack.py</code><br><br>
 # Some commands
