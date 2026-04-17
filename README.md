@@ -1,32 +1,70 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
-# DDos Attack
-HTTP Website Attack Tool for destroying websites The tool is for educational purposes
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+# Authorized HTTP Load Testing Utility
 
-# Contact me on Telegram
-<br><b>~~> <a href="https://t.me/CTlTl">Telegram</a> <~~</b><br>
+This project is a **safe and controlled HTTP load-testing tool** for authorized environments
+(lab, staging, or production systems where you have explicit written permission).
 
-# Installing
-1. <code>apt update && apt upgrade -y</code>
-2. <code>apt install git python -y</code> 
-3. <code>python -m pip install requests colorama click</code>
-4. <code>git clone https://github.com/uvvvo/DDos-Attack</code>
-5. <code>cd DDos-Attack</code>
-6. <code>python Attack.py</code><br><br>
-# Some commands
+## Safety policy
+- Public targets are blocked by default.
+- Local/private targets are allowed (localhost, RFC1918 IP ranges, `.local`).
+- To test a public host, you must explicitly add it with `--allow-hosts`.
+- A kill switch file (`STOP_TEST` by default) can stop all workers immediately.
 
-Usage: ddos.py [OPTIONS]<br>
-Options:<br
-<code>--proxy</code> - TEXT - File with a proxy<br>
-<code>--help</code> - Show this message and exit.<br>
-Example:<br>
-<code>python ddos.py</code><br>
-or<br>
-<code>python ddos.py --proxy "dicts/proxies.txt"</code><br>
+## Features
+- Concurrency with configurable worker threads.
+- Traffic profiles: `steady`, `ramp`, `spike`, `soak`.
+- Global RPS cap (`--max-rps`).
+- Optional proxy pool file.
+- Real-time terminal output and final summary.
+- JSON/CSV reporting for CI and post-analysis.
+- P50/P95/P99 latency metrics.
 
+## Install
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install requests colorama click
+```
 
+## Usage
+```bash
+python Attack.py --url http://127.0.0.1:8080 --duration 20 --workers 10 --profile ramp --max-rps 50
+```
 
-# Update
-<code>cd ~/dos-attack/ && git pull</code>
+### Public host test (explicit allow-list)
+```bash
+python Attack.py \
+  --url https://example.com/health \
+  --allow-hosts example.com \
+  --duration 30 \
+  --workers 12 \
+  --profile steady \
+  --max-rps 40
+```
 
+## Reports
+```bash
+python Attack.py \
+  --url http://127.0.0.1:8080 \
+  --output-json reports/summary.json \
+  --output-csv reports/summary.csv
+```
 
+## Kill switch
+During a test run, create the configured kill switch file to stop workers:
+```bash
+touch STOP_TEST
+```
 
+## Proxy file format
+Use one proxy per line, comments start with `#`:
+```text
+# ip:port
+127.0.0.1:8080
+10.0.0.20:3128
+```
+
+## Legal notice
+Use this tool only on systems you own or are formally authorized to test.
+Unauthorized stress testing can be illegal and unethical.
